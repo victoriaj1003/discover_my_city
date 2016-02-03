@@ -1,0 +1,30 @@
+@import 'fonts';
+
+$primary-font: "quicksand-regular";
+$primary-font-bold: "quicksand-bold";
+$primary-color-top: #1D1128;
+$primary-color-bottom: #F7F6ED;
+$secondary-color: #a19dab;
+$tertiary-color: #E0CCE0;
+
+.topofmappage {
+	background-color: $primary-color-top;
+	height: 100px;
+#wheretodiscover {
+	 	color: #FFFFFF;
+	 	font-family: $primary-font;
+	 	text-align: center;
+	 	font-size: 30px;
+	 	margin-top: 0;
+	 	padding-top: 3%;
+	  }
+}
+
+
+#map{
+	position: absolute;
+	top: 95px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}	

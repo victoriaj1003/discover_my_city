@@ -1,0 +1,38 @@
+<div id="art-main">
+	<div class="art-top">
+	  <div class="art-img"><img src="/assets/<%=@artwork.avatar_file_name %>"/></div>
+	  	<div class="back-link"><%= link_to "Back to Main Map", '/map' %></div>
+
+	   <% if current_user %>
+
+	  	<div class="comment-link"><%= link_to "Leave a thought about your discovery", '/comment' %></div>
+
+	  	<div class="logout-link"><%= link_to "Log out", destroy_user_session_path, method: :delete %></div>
+
+	  	<% else %>
+
+	  	
+	  	<% end %>
+
+	  
+
+		<div class="art-info">
+			<h2 class="art-name"><%= @artwork.name %></h2>
+			<div class="art-artist">By <%= @artwork.artist %></div>
+			<div class="art-location"><%= @artwork.location %></div>
+			<p class="art-history"><%= @artwork.history %></p>
+
+		</div><!--/art-info-->
+
+		<div class="clearfix"></div>
+		<!-- boostrap: To make an image fits in the dive art-top box -->
+	</div><!--/art-top-->
+
+	<div id="art-map">
+
+	  <div id="map" style='width: 800px; height: 250px;'></div>
+	</div>
+	<%= render 'map' %>
+	</div><!--/art-map -->
+</div><!--/art-main -->
+

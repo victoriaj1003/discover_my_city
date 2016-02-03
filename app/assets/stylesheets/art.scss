@@ -1,0 +1,87 @@
+@import 'fonts';
+
+$primary-font: "quicksand-regular";
+$primary-font-bold: "quicksand-bold";
+$primary-color-top: #1D1128;
+$primary-color-bottom: #F7F6ED;
+$secondary-color: #a19dab;
+$tertiary-color: #E0CCE0;
+
+body{
+	background: $primary-color-bottom;
+}
+
+#art-main {
+
+	.art-top {
+		width: 100%;
+		height: auto;
+		background-color: $primary-color-top;
+
+		.art-info {
+			padding: 15px;
+			color: #FFFFFF;
+			max-width: 40%;
+
+			h2:first-child{
+				margin-top: 0;
+			}
+		}
+
+		.art-artist {
+			font-family: $primary-font;
+			font-size: 24px;
+		}
+
+		.art-location {
+			@extend .art-artist;
+			margin: 0 0 10px;
+			font-size: 18px;
+			text-decoration: underline;
+		}
+		.art-history {
+			@extend .art-artist;
+			font-size: 14px;
+
+		}
+
+		.art-img img {
+			float:left;
+			width: 50%;
+			height: 400px;
+		}
+
+		.art-info {
+			float: left;
+
+
+			.art-name {
+				color: #FFFFFF;
+				font-family: $primary-font-bold;
+			}
+			.art-artist .art-location .art-history {
+				@extend .art-name;
+				font-family: $primary-font;
+			}
+		}
+	}
+}
+
+#art-map{
+	position: absolute;
+	top: 415px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+
+	#map{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: auto !important;
+		height: auto !important;
+	}
+}
+

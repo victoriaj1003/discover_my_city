@@ -1,0 +1,55 @@
+@import 'fonts';
+
+$primary-font: "quicksand-regular";
+$primary-font-bold: "quicksand-bold";
+$primary-color-top: #1D1128 ;
+$primary-color-bottom: #F7F6ED ;
+$secondary-color: #a19dab ;
+$tertiary-color: #E0CCE0 ;
+
+body {
+    margin: -5px;
+    background-color: $primary-color-bottom;
+}
+.form-title {
+    font-family: $primary-font-bold;
+    font-size: 40px;
+    text-align: center;
+}
+#form {
+    background-color: rgba(29,17,40,1.0);
+    width: 70%;
+    height: 300px;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    .field {
+        // width: 100%;
+        margin-left: 35%;
+
+        label {
+            font-family: $primary-font;
+            font-size: 20px;
+            color: #FFFFFF ;
+        }
+        input{
+            width: 300px;
+        }
+        em {
+            font-family: $primary-font;
+            color: #FFFFFF ;
+        }
+     .actions input {
+                width: 200px;
+                font-family: $primary-font-bold;
+    
+        }
+        #user_remember_me {
+            width: 25%;
+            font-size: 15px;
+        }
+
+        a {
+            color: #FEFEFE;
+        }
+    }    
+}

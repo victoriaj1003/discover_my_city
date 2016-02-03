@@ -1,0 +1,9 @@
+== README
+
+A Ruby on Rails app that lets the user discover public art installations throughout the 5 boroughs of New York City.  Created collaboratively as a final group project for the New York Code + Design Academy Web Development Intensive/April 2015.
+
+Future implementations may include other landmarks and points of interest such as architecturally significant and unique buildings, subway art, historical landmarks, etc.; user membership and the ability to share comments/photos about the art discovered and points of interest nearby.  
+
+
+Built with Ruby version 2.2.0, Rails, HTML/CSS/SASS, jQuery, Paperclip gem, Google Maps API, and Bootstrap.
+

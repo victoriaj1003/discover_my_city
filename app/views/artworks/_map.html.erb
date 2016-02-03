@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	var handler = Gmaps.build('Google');
+handler.buildMap({ internal: {id: 'map'}}, function(){
+	var markers = handler.addMarkers ([
+	  {
+	  "lat" : <%= @artwork.lat %>,
+	  "lng" : <%= @artwork.lng %>,
+	  "infowindow" : '<img style="width: 60px" src="/assets/<%= @artwork.avatar_file_name %>" /> <%= @artwork.name %>'
+	},
+  ]);
+	handler.bounds.extendWith(markers);
+	handler.fitMapToBounds();
+});
+
+</script>
